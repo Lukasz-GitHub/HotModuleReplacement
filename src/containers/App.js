@@ -3,6 +3,7 @@ import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
 import TodoList from '../components/TodoList';
+import { hot } from 'react-hot-loader';
 
 class App extends React.Component {
     constructor(props){
@@ -12,12 +13,18 @@ class App extends React.Component {
                 {
                     id: 1,
                     text: 'Clean room'
-                }, {
+                },
+                {
                     id: 2,
                     text: 'Wash the dishes'
-                }, {
+                },
+                {
                     id: 3,
-                    text: 'Feed my cat'
+                    text: 'Gym'
+                },
+                {
+                    id: 4,
+                    text: 'Shopping'
                 }
             ]
         };
@@ -47,4 +54,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default hot(module)(App);
