@@ -1,0 +1,8 @@
+button {
+    background-color: limegreen;
+    border: 0;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+}
